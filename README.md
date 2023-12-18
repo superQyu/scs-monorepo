@@ -122,11 +122,11 @@ react-admin-vite-antd5
 
 1. 创建项目
    ```bash
-   git clone https://github.com/frontend-winter/react-admin-vite-antd5
+   git clone https://github.com/superQyu/scs-monorepo.git
    ```
 2. 访问项目目录
    ```bash
-   cd react-admin-vite-antd5
+   cd demo
    ```
 3. git 初始化项目
    ```bash
@@ -136,7 +136,7 @@ react-admin-vite-antd5
    ```bash
    pnpm install
    ```
-5. 启动项目，访问链接：http://localhost:5793
+5. 启动项目
    ```bash
    pnpm run dev
    ```
@@ -154,27 +154,6 @@ react-admin-vite-antd5
 
 ### 推荐使用`nginx`部署
 
-- config 如下
-
-```bash
-# 后台管理模板
-location ^~ /react-admin-vite-antd5{
-  index index.html;
-
-  if ($request_uri ~* .*[.](js|css|map|jpg|png|svg|ico)$) {
-    #设置过期时间120秒，120秒过后向服务器重新请求数据
-    add_header Cache-Control max-age=120;
-  }
-
-  if ($request_filename ~* ^.*[.](html|htm)$) {
-    add_header Cache-Control "public, no-cache";
-    #html文件协商缓存，也就是每次都询问服务器，浏览器本地是是否是最新的，是最新的就直接用，非最新的服务器就会返回最新
-  }
-
-
-  try_files $uri $uri/ /react-admin-vite-antd5/index.html;
-}
-```
 
 ### 校验代码 格式化代码
 
