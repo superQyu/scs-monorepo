@@ -99,7 +99,7 @@ react-admin-vite-antd5
 | ├─hooks // 公共 hooks
 | ├─eslint-config-custom // 全局 eslint
 | ├─components // 公共业务组件
-├─apps // 项目存放路径
+├─apps // 项目存放路径  但在该项目中不会做任何记录 此目录为开发者自己的项目存放目录
 | ├─demo // 示例项目
 | ├─admin // 示例项目
 | | ├─src // 主文件
