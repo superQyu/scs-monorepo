@@ -32,7 +32,7 @@
 - 我们所有的包管理都强制使用[pnpm](https://pnpm.io/zh/motivation)，在 `monorepo` 架构之上，`pnpm` 能极大发挥他的作用(设计初期就很好的考虑了当前复杂项目的痛点)，相比 `yarn` 和 `npm`，`pnpm` 能节约磁盘空间并提升安装速度，切避免了关于深度嵌套包的一些意外情况，如果你还没有接触了解过 `pnpm`,可以看看[相关文章](https://zhuanlan.zhihu.com/p/377593512), 而且当前已有众多[前端团队](https://pnpm.io/zh/users)和大部分主流开源项目抛弃 `npm`,`yarn`，开始接入 `pnpm`
 - [精读《Monorepo 的优势》](https://zhuanlan.zhihu.com/p/65533186)
 - [现代化前端应用为什么越来越离不开 Monorepo](https://juejin.cn/post/6944877410827370504)
-- [参考](https://turbo.build/repo/docs/core-concepts/monorepos)
+- [参考](https://turbo.build/repo/docs/core-concepts/monorepos) 
 
 ## 子应用
 
@@ -117,6 +117,8 @@ react-admin-vite-antd5
 - [tsconfig](tsconfig) ts 配置文件，有`base.json`，`vite.json`
 - [ui](ui) `ui`组件和`components`不一样的地方就是`ui`只专注纯组件开发，不带业务
 - [utils](utils) 工具库，常用的工具函数
+- [apis](apis) 自动化接口
+- [webRequest](webRequest)  网络请求 目前封装了fetch
 
 ### 开始
 
